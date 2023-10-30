@@ -19,7 +19,8 @@
 </div>
 </br>
 
- <video class="sidebar__video" src="https://github.com/locT-581/Audius/assets/132336957/69ff90b0-4900-460b-bad5-152d1918a0e5" autoPlay loop muted />
+ <video class="sidebar__video" src="https://github.com/locT-581/Audius/assets/132336957/69ff90b0-4900-460b-bad5-152d1918a0e5" autoPlay loop muted nocontrols>
+ </video>
 
 ## 📑 Description 
 **Simple static web application for listening to music, using pure HTML, CSS, and JavaScript.**
