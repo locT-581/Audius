@@ -1,0 +1,119 @@
+<!-- Ten: Nguyen Hoang Quan
+    MSSV: B2014602 -->
+<!-- https://codepen.io/julesforrest/pen/qLpgNB -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/upgrade.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Link font Google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/png">
+    <title> Upgrade | Audius </title>
+    <!-- link tham khao https://www.spotify.com/vn-vi/premium/?utm_source=vn-vi_brand_contextual_text&utm_medium=paidsearch&utm_campaign=alwayson_asia_vn_performancemarketing_core_brand+contextual-desktop+text+exact+vn-vi+google&gclid=Cj0KCQiAj4ecBhD3ARIsAM4Q_jFq0SZnjW1FC6K6ATTxOHIQGULcmF8Twm6TCURKI_TbqpLziPI6J34aAg8sEALw_wcB&gclsrc=aw.ds -->
+	<!-- https://www.codingnepalweb.com/responsive-pricing-tables-html-css/-->
+</head>
+<body>
+    
+    <div class="top-banner">
+        <p class="current-plan">Dùng Prenium miễn phí trong 1 tháng</p>
+        <p class="plan-type"> Sau đó chỉ từ 59.000đ/tháng. Hủy bất cứ lúc nào</p>
+    </div>
+
+    <div class="container">
+      <h1 class="title">Chọn gói Prenium của bạn</h1>
+      <div class="toggle-switch" >
+            <span>Tự động gia hạn </span>
+            <input type="checkbox" class="toggler" checked="true">
+            <span> Chọn số lượng</span>
+      </div>
+
+      <div class="cards">
+        <!-- Basic Prenium -->
+          <div class="card" id="card-1">
+            <h1 class="card-title">Basic</h1>
+            <h2 class="card-price" id="starter-price">19<span> .000 vnđ / tháng</span> </h2>
+            <ul class="card-plan">
+                <li>Nghe nhạc không quảng cáo </li>
+                <li>Nhóm nghe chung </li>
+                <li>Tải 30 bài hát xuống 1 thiết bị di động</li>
+                <li>Phát theo thứ tự bất kì</li>
+                <li>Tự do skip bài hát</li>
+                <li>Âm thanh chất lượng cao</li>
+            </ul>
+            <button type="button" onclick="myFunction(event)" class="card-btn"> Bắt đầu </button>
+          </div>
+
+          <!-- Pro Prenium -->
+          <div class="card active1" id="card-2">
+            <h1 class="card-title">Pro</h1>
+            <h2 class="card-price" id="pro-price">59<span> .000vnđ / tháng</span> </h2>
+            <span class="note"> Được dùng nhiều nhất </span>
+          
+            <ul class="card-plan">
+                <li>Nghe nhạc không quảng cáo</li>
+                <li>Nghe mọi nơi - ngay cả khi không có kết nối mạng</li>
+                <li>Phát nhạc theo thứ tự bất kỳ </li>
+                <li>Tự do skip bài hát </li>
+                <li>Dowload tất cả các bạn hát mà bạn yêu thích và có thể nghe offline</li>
+            </ul>
+            <button type="button" onclick="myFunction(event)" class="card-btn"> Bắt đầu </button>
+          </div>
+          
+          <!--Student Prenium -->
+          <div class="card active2" id="card-3">
+            <h1 class="card-title">Student</h1>
+            <h2 class="card-price" id="student-price">12<span> .000vnđ / tháng</span> </h2>
+          
+            <ul class="card-plan">
+                <li> Giảm giá đặc biệt cho sinh viên đủ điều kiện </li>
+                <li> Nghe nhạc không quảng cáo</li>
+                <li>Nghe mọi nơi - ngay cả khi không có kết nối mạng</li>
+                <li>Phát nhạc theo thứ tự bất kỳ  </li>
+                <li>Âm thanh chất lượng cao</li>
+            </ul>
+            <button type="button" onclick="myFunction(event)" class="card-btn"> Bắt đầu</button>
+          </div>
+      </div>
+
+      <div class="card-table">
+        <table>
+          <!-- <tr>
+            <th class="left">Tên gói</th>
+            <th class="right">Số lượng</th>
+          </tr>
+          <tr>
+            <td class="left">Basic</td>
+            <td class="right">1 <icon class="material-icons">delete</icon></td>
+          </tr>
+          <tr>
+            <td class="left"></td>
+            <td class="right"><button>Thanh toán</button></td>
+          </tr> -->
+        </table>
+      </div>
+      <footer>
+        <div>
+          <ul>
+            <li><a href="https://twitter.com">Twitter</a></li>
+            <li><a href="https://codepen.io">Codepen</a></li>
+            <li><a href="#">Email</a></li>
+            <li><a href="https://dribbble.com">Dribbble</a></li>
+            <li><a href="https://github.com">Github</a></li>
+            <li>
+              <p class="icon">👋</p>
+            </li>
+          </ul>
+          <p>&copy;2023 copyright by LocT</p>
+        </div>
+      </footer>
+    </div>
+    
+
+    <script src="./scripts/upgrade.js"></script>
+
+</body>
+</html>

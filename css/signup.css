@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400&family=Nunito:wght@300;400;500&family=Poppins:ital,wght@0,300;0,500;0,700;0,800;1,400;1,500&family=Roboto+Mono:wght@500&family=Roboto:ital,wght@0,500;0,900;1,500&display=swap');
+
+        .audius{
+            font-size: 20px;
+            padding: 0 1.5em;
+            text-decoration: none;
+            color: var(--text-color);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+        }
+        .img_backgroud{
+            align-items: center;          
+            flex-basis: 30%;
+            height: 90vh;
+            margin: 10px;
+            
+        }
+        .img_backgroud img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            mix-blend-mode: screen;
+        }
+        .wrapper{
+            padding: 40px;
+            margin-right: 100px;
+            
+        }
+        .form_group .form_input{
+            width: 100%;
+            background-color: transparent;
+            font-family:  'Roboto Mono', monospace;
+            margin: 15px 0px;
+            border: 1px solid var(--text-color);
+            outline: none;
+            height: 40px;
+            border-radius: 9px;
+            padding: 5px 10px;
+            box-shadow: -0.1em 0.125em 0.325em var(--box-shadow__white);
+            color: var(--text-color);
+        }
+        .form_group .form_input:focus{
+            color: var(--text-color);
+        }
+        .action_signup{
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .action_plus{
+            font-weight: 400;
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .action_signup .submit_btn{
+            padding: 8px 60px;
+            border-radius: 20px;
+            color: var(--white-colors);
+            border: 2px solid var(--white-color);
+            font-family:  'Roboto Mono', monospace;
+            cursor: pointer;
+            box-shadow: 0px 0.125em 0.625em var(--box-shadow__white);
+            background-image: linear-gradient(10deg, #62929E 0%, #96D2E1 100%);
+            background-color: #96D2E1;
+        }
+        .action_signup .submit_btn:hover{
+            color: #1b1f23;
+        }
+        ::placeholder{
+                color: var(--text-color);
+        }
+        .checkbox{
+            font-weight: 400;
+            margin: 15px 0px;
+        }
+        .action_login{
+            font-weight: 400;
+            text-align: center;
+            margin-top: 15px;
+        }
+        .checkbox .form_checkbox{
+            accent-color: transparent;
+            cursor: pointer;
+            ;
+        }
+        .title{
+            margin: 20px 0px;
+            
+        }
+        .rules_service{
+            color: var(--white-color);
+            font-style: italic;
+        }
+        .login_href{
+            color: var(--white-color);
+        }
+        .img_google,.img_apple{
+                padding: 3px;
+                border-radius: 50%;
+                background-color: var(--white-color);
+                cursor: pointer;
+            }
+
+    @media screen and (max-width: 1300px) {  
+        main{
+            justify-content: space-between;
+        }
+        .wrapper{
+            flex-basis: 50%;
+            padding: 20px;
+            margin-right: 15px;
+
+        }
+        .img_backgroud{
+            flex-basis: 35%;
+        }
+    
+} 
+    @media screen and (max-width: 950px) {  
+        .img_backgroud{
+            flex-basis: 35%;
+        }
+        .wrapper{
+            flex-basis: 65%;
+            margin-right: 8px;
+            
+        } 
+
+    }
+
+        @media screen and (max-width: 768px) {
+            main{
+                align-items: center;
+                
+            }
+            .img_backgroud{
+                display: none;
+            }
+            .wrapper{
+                align-items: center;
+                margin: 0px;
+                flex-basis: 100%;
+                
+            }
+            .title{
+                text-align: center;
+            }
+            .action_signup{
+                display: block;
+                text-align: center;
+            }
+            .submit_btn{
+                width: 100%;
+                
+            }
+            .action_plus{
+                margin-top: 10px;
+                font-weight: 400;
+            }
+        }

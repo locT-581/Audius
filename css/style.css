@@ -1,0 +1,605 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background-color: #171b1f;
+    --background-gradient: linear-gradient(45deg, #1b1719 6%, #1b1f23 97%);
+    --text-color: #fdfdff;
+    --button-color--cyan: linear-gradient(65deg, #62929e 4%, #61a29c 97%);
+    --button-color--red: linear-gradient(43deg, #ef2c44 0%, #ef233c 45%, #ef5769 100%);
+    --white-color:#fdfdff;
+    --box-shadow__white: rgba(253, 253, 255, 0.5);
+    --box-shadow__gold: rgba(255, 227, 103, 0.8);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
+}
+
+body{
+    position: relative;
+    font-family: "Roboto Mono", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: var(--text-color);
+    background-image: var(--background-gradient);
+    background-color: var(--background-color);
+    font-weight: 600;
+    width: 100vw;
+    height: 100vh;   
+    overflow: hidden;
+}
+
+.navbar{
+    padding: 1.5em 0 0.5em 0;
+}
+.audius{
+    font-size: 20px;
+    padding: 0 1.5em;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+.audius:hover{
+    cursor: pointer;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+#home{
+    pointer-events: visible;
+}
+#home:hover{
+    cursor: pointer;
+}
+.material-icons{
+    color: var(--text-color);
+    font-size: 20px !important;
+    text-align: center;
+    height: fit-content;
+    padding: 0.1em 0.4em;
+}
+.redirect__nav >a,
+.redirect__nav >i{
+    pointer-events: none;
+}
+.material-icons:hover{
+    cursor: pointer;
+}
+.search__input{
+    height: 2.3em;
+    padding: 0.1em 1em;
+    border-radius: 0.625em;
+    border: 0.1em solid var(--white-color);
+    color: var(--text-color);
+    line-height: 0.5em;
+    background-color: rgba(255, 255, 255, 0);
+    width: 50%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+    .search__input:focus{
+        color: var(--text-color);
+        width: 70%;
+        background-color: transparent;
+    }
+.search__icon{
+    padding: 0.125em 0.125em;
+}
+
+.option button{
+    color: var(--text-color);
+    border: 0.125em solid var(--white-color);
+    border-radius: 0.625em;
+    margin: 0 0.4em;
+    padding: 0.2em 1em;
+}
+.option__upgrade{
+    box-shadow: 0px 0.125em 0.625em var(--box-shadow__gold);
+}
+.option__upgrade>a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+.option__login{
+    align-items: center; 
+    box-shadow: 0px 0.125em 0.625em var(--box-shadow__white);
+}
+
+
+/* Main */
+main{
+    display: flex;
+    height: 90%;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 4%;
+
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    width: 83.33%;
+    padding: 0 2.5em 2.5em 1.5em;
+    height: 100%;
+}
+.sidebar{
+    padding-left: 1.5%;
+    padding-bottom: 4em;
+    height: 100%;
+    width: 16.667%;
+}
+.sidebar__title{
+    color: #fdfdff;
+    font-size: 20px;
+    text-decoration: none;
+    padding-top: 0.5em;
+    pointer-events: none;
+}
+li a:hover{
+    color: var(--text-color);
+}
+li a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+.sidebar__sub{
+    padding-top: 1em;
+}
+.sub__li:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.sb-text{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.sb-text:hover{
+    color: var(--white-color);
+    opacity: 0.7;
+    cursor: pointer;
+}
+.sub__li{
+    padding: 0.5em 1em;
+    display: flex; 
+    align-items: center; 
+}
+.btn__makePl{
+    color: #fdfdff;
+    background-image: linear-gradient(10deg, #62929E 0%, #96D2E1 100%);
+    background-color: #96D2E1;
+    border: 0.125em solid #fdfdff;
+    border-radius: 2em;
+    width: 80%;
+}
+/* sidebar--tablet */
+.sidebar--tablet{
+   display: none;
+   padding-top: 1em;
+   height: 90%;
+   z-index: 20;
+}
+.sidebar--tablet nav li{
+    padding-left: 2px;
+    transition: 0.3s; 
+    position: absolute;
+    left: -83px;
+    width: 125px;
+    text-align: end;
+}
+#home{
+    top: 90px;
+}
+#library{
+    top: 150px;
+}
+#favorite{
+    top: 210px;
+}
+#listen{
+    top: 270px;
+    width: 175px;
+    left: -133px;
+}
+#most{
+    top: 330px;
+    width: 185px;
+    left: -143px;
+}
+#recommend{
+    top: 390px;
+}
+#playlist{
+    top: 450px;
+}
+#nhachay{
+    top: 510px;
+}
+.sidebar--tablet nav li:hover{
+    background-image: var(--button-color--cyan);
+    border-radius: 9px;
+    left: 1px;
+    cursor: pointer;
+    box-shadow: 1px 2px 10px rgba(36, 36, 36, 1);
+}
+#most:hover,
+#listen:hover{
+    background-image: var(--button-color--cyan);
+    border-radius: 9px;
+    left: 1px;
+    cursor: pointer;
+    box-shadow: 1px 2px 10px rgba(36, 36, 36, 1);
+}
+/* sidebar--mobile */
+.sidebar--mobile{
+    background-image: var(--background-gradient);
+    height: 60px;
+    width: 100%;
+    z-index: 20;
+    display: none;
+}
+.sidebar--mobile li:hover{
+    background-color: #2F3037;
+    cursor: pointer;
+}
+.sidebar--mobile nav{
+    width: 100%;
+}
+/* --------------------- */
+main i{
+    padding-right: 0.2em;
+}
+.header__title{
+    display: inline-block;
+    justify-content: start;
+    color: #fdfdff;
+    font-size: 24px;
+}
+.header__see-all:hover{
+    color: #fdfdff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.header__see-all{
+    padding-right: 10px;
+    line-height: 48px;
+    color: #fdfdff;
+    font-size: 16px;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 450;
+    float: right;
+}
+.content{
+    display: flex;
+    width: 100%;
+    padding-left: 1em;
+    height: fit-content;
+}
+/* item css */
+.cover-item{
+    width: 25%;
+    background-color: rgba(255, 255, 181, 0);
+    padding: 1em 0 0.5em 0;
+}
+.cover-item:hover{
+    transform: scale(1.03);
+}
+.item{
+    height: 100%;
+    max-width: 100%; 
+    color: #fdfdff;
+    text-align: center;
+    margin: 0 1.5em;
+    padding: 0.7em 1em;
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.15);
+}
+.item__avt{
+    border-radius: 6px;
+    width: 80%;
+    pointer-events:none;
+}
+.item:hover{
+    cursor: pointer; 
+}
+.item__avt--singer{
+    pointer-events:none;
+    margin: 0.2em;
+    width: 90%;
+    padding: 0.5em;
+    border-radius: 50%;
+}
+.item__name{
+    padding-top: 0.7em;
+    font-size: 16px;
+    pointer-events:none
+}
+.item__au{
+    font-style: italic;
+    color: #C3C3C3;
+    font-size: 12px;
+    pointer-events:none
+}
+.range{
+    -webkit-appearance: none; 
+    width: 100%; 
+    background: transparent;
+    margin-bottom: 0.1em; 
+}
+.range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px;
+    background-color: var(--white-color);
+}
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-image: var(--button-color--cyan);
+    width: 13px;
+    height: 13px;
+    border-radius: 50em;
+    margin-top: -4px;
+    box-shadow: 0 0 0 2px white, 0 0 0 3px rgba(100, 100, 111, 0.05); 
+}
+.range:hover{
+    cursor: pointer;
+}
+.list-song::-webkit-scrollbar,
+.main-content::-webkit-scrollbar{
+    width: 5px;
+    background-color: #F5F5F5;
+}
+.list-song::-webkit-scrollbar-thumb,
+.main-content::-webkit-scrollbar-thumb {
+    background-color: #2F3037;
+
+}
+.list-song::-webkit-scrollbar-track,
+.main-content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #d4cbcb;
+}
+/* Song page */
+.center-content{
+    height: 100%;
+    width: 65%;
+}
+.main-song{
+    height: 57%;
+    width: 83.33%;
+    display: flex;
+    justify-content: space-between;
+}
+.top-song{
+    height: 60%;
+}
+
+.cover-img{
+    padding: 0.8em;
+    width: 33.33%;
+}
+.cover-img > img{
+    border-radius: 0.8em;
+}
+.cover-des{
+    padding: 2em 0;
+    max-width: 50%;
+    width: 66.67%;
+}
+.btn-play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fdfdff;
+    background-image: var(--button-color--cyan);
+    background-color: #96D2E1;
+    border: 0px;
+    border-radius: 0.9em;
+    padding: 0.125em 1em;
+}
+.btn-play>icon{
+    padding: 0;
+    text-align: center;
+}
+hr{
+    padding: 0 1em;
+    border: 0.02em solid var(--white-color);
+    background-color: var(--white-color) !important;
+    margin: 0.3em 0.5em;
+}
+.list-song{
+    margin-top: 35px !important;
+    width: 100%;
+    height: 90%;
+    overflow: auto;
+}
+.song{
+    height: 55px;
+    padding: 0.5em 0 0.4em 0;
+    margin-top: 0.3em;
+    display: flex;
+    justify-content: space-between;
+}
+.song:hover{
+    cursor: pointer;
+    background-color: #1b1e21;
+    box-shadow: 0px 2px 5px rgba(222, 222, 222, 0.2);
+}
+.song-info{
+    pointer-events: none;
+    width: 70%;
+}
+.song-option{
+    width: auto;
+    pointer-events: none;
+}
+.avt-song{
+    height: 100%;
+    width: auto;
+    border-radius: 100%;
+    margin: 0 0.5em;
+}
+.item-song__title > .item__name{
+    font-size: 12px;
+}
+.item-song__title > .item__au{
+    font-size: 10px;
+}
+.listens{
+    font-size: 10px;
+    font-weight: 500;
+}
+.play-card{
+    top: 10px;
+    position: relative;
+    left: 0;
+    right: 0;
+    min-width: 30%;
+    width: 35%;
+    height: 350px;
+    margin-bottom: 2em;
+    padding: 0;
+}
+.mask{
+    max-width: 65%;
+    min-width: 250px;
+    border: 5px solid var(--background-color);
+    border-radius: 0.625em;
+    margin: 0 auto;
+}
+.play-card__cover{
+    background-image: url('../images/song cover img/dien-vien-toi.jpg');
+    background-color: var(--background-color);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 100%;
+    width: auto;
+    filter: blur(9px);
+    -webkit-filter: blur(9px);  
+    opacity: 0.9;
+}
+.play-card__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: auto;
+    height: 90%;
+    margin: 0 0.5em; 
+    padding: 0 0.5em;
+}
+.play-card__content > img{
+    width: 60%;
+    height: auto;
+    min-height: 130px;
+    min-width: 130px;
+    margin: 0.8em 1em;
+    border-radius: 100em;
+    box-shadow: 0 0 9px var(--white-color);
+}
+.play-card__content > img.is-playing{
+    animation: spinner 7s infinite linear;
+}
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+.timer{
+    width: 100%;
+    padding: 0.3em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.play-card__content section i{
+    font-size: 16px !important;
+    padding: 0.2em 0.5em;
+}
+.play-card__content section i:nth-child(2),
+.play-card__content section i:nth-child(3),
+.play-card__content section i:nth-child(4){
+    font-size: 30px !important;
+    padding: 0 0.2em;
+}
+.play-card__option{
+    background-color: rgba(140, 140, 140, 0.2);
+    border-radius: 1em;
+    text-align: center;
+    padding: 0.1em 1em 0.3em 1em;
+    bottom: -1.8em;
+    left: 0;
+    right: 0;
+}
+.play-card__option section:hover{
+    cursor: pointer;
+}
+
+footer{
+    padding-left: 3%;
+    font-size: 10px;
+    
+}
+
+
+/* Welcome Page */
+.main-wel{
+    padding: 0 5%;
+}
+.body-welcome{
+    width: 100vw;
+    height: 100vh;
+}
+.login-signup{
+    padding-right: 6em;
+}
+.login-signup > button{
+    color: var(--text-color);
+    border-radius: 1.5em;
+    padding: 0.2em 1.5em;
+}
+.login-signup__login{
+    border: 0.1em solid rgba(16, 16, 16, 0 ) ;
+    margin-right: 0.5em;
+}
+.login-signup__login:hover{
+    border: 0.1em solid var(--white-color) !important;
+    border-radius: 1.5em;
+}
+.audius_btn{
+    color: var(--text-color);
+    border: 0.1em solid var(--white-color);
+    border-radius: 1.5em;
+    padding: 0.5em 3em;
+    background-image: var(--button-color--cyan);
+}
+.audius_btn:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    transform: scale(1.03);
+    transition: 0.2s;
+}
+.img{
+    height: 100%;
+}
+.img_wel{
+    height: 100%;
+    width: auto;
+    mix-blend-mode: screen;
+}
+/* ______________________ */
+
+input[type="text"]{
+    outline: none;
+}

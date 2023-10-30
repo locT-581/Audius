@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Link bootstrap -->
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
+      />
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"
+      ></script>
+      <!-- Link CSS -->
+      <link rel="stylesheet" href="./css/style.css"/>
+      <link rel="stylesheet"  href="./css/responsive.css">
+      <!-- Link Icon Google -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <!-- Link font Google -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+      <link rel="shortcut icon" href="./images/logo.png" type="image/png">
+      <title>Feed | Audius</title>
+  </head>
+  <body>  
+    <header>
+      <nav class="navbar navbar-expand m-0 row w-100"> 
+        <a class="audius col-2 col-md-3 m-0" href="index.html">Audius</a>
+        <form class="search form-inline p-0 col-6 d-flex justify-content-end">
+          <input
+            name="search"
+            class="search__input my-auto"
+            type="text"
+            placeholder="Tìm kiếm"
+          />
+          <button type="submit" class="search__icon btn d-flex">
+            <span class="material-icons my-auto" >search</span>
+          </button>
+        </form>
+        <section class="option col-4 col-md-3 p-0 d-flex justify-content-center">
+          <button class="option__upgrade btn btn-outline-dark" type="button">
+            <a href="upgrade.html"><i class="material-icons fa-crown d-block d-sm-none" >diamond</i></a>
+            <a class="premium d-none d-sm-block" href="upgrade.html"> Premium</a>
+          </button>
+          <section class="dropdown">
+            <button
+              class="option__login btn dropdown-toggle btn-outline-dark d-flex align-items-center" 
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+            <i class="material-icons d-inline-block d-sm-none">person</i><span class="user d-none d-sm-block">user</span>
+            </button>
+            <ul class="option__drowdown dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+              <li class="drowdown__li"><a class="dropdown-item p-1 ps-2" href="login.html">Đổi tài khoản </a></li>
+              <li class="drowdown__li"><hr class="dropdown-divider"></li>
+              <li class="drowdown__li"><a class="dropdown-item p-1 ps-2" href="login.html">Đăng xuất</a></li>
+            </ul>
+          </section>
+        </section>
+      </nav>
+    </header>
+
+
+    <main class="p-0 m-0 w-100">
+      <!-- sidebar -->
+      <article class="sidebar pt-4 d-flex flex-column justify-content-between justify-content-center">
+        <nav>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a id="home" class="sidebar__title" href="index.html"><i class="material-icons">home</i>Home</a>
+            </li>
+            <li class="nav-item pt-3">
+              <a class="sidebar__title"><i class="material-icons">library_music</i>Thư viện</a>
+              <ul class="sidebar__sub nav flex-column">
+                <li class="sub__li nav-item redirect__nav"><i class="material-icons">favorite</i><a class="sb-text">Đã thích</a></li>
+                <li class="sub__li nav-item redirect__nav"><i class="material-icons"> update</i><a class="sb-text">Nghe gần đây</a></li>
+                <li class="sub__li nav-item redirect__nav"><i class="material-icons">star</i><a class="sb-text">Nghe nhiều nhất</a></li>
+                <li class="sub__li nav-item redirect__nav"><i class="material-icons">language</i><a class="sb-text" >Đề xuất</a></li>
+              </ul>
+            </li>
+            <li class="nav-item  pt-3">  
+              <a class="sidebar__title" ><i class="material-icons">music_note</i>Playlist</a>
+              <ul class="sidebar__sub nav flex-column">
+                <li class="sub__li nav-item redirect__nav"><i class="material-icons">filter_none</i><a class="sb-text">Nhạc hay</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <section>
+          <button type="button" class="btn__makePl btn">
+            Tạo Playlist
+          </button>
+        </section>
+      </article>
+
+      <!-- sidebar tablet -->
+      <article class="sidebar--tablet col-2 flex-column justify-content-between ">
+        <nav>
+          <ul class="nav flex-column">
+            <li id="home"><a href="index.html">Home<i class="material-icons">home</i></a></li>
+            <li id="library"><a>Thư viện<i class="material-icons">library_music</i></a></li>
+            <li class="redirect__nav" id="favorite"><a> Đã thích</a><i class="material-icons">favorite</i></li>
+            <li class="redirect__nav" id="listen"><a>Nghe gần đây</a><i class="material-icons"> update</i></li>
+            <li class="redirect__nav" id="most"><a>Nghe nhiều nhất</a><i class="material-icons">star</i></li>
+            <li class="redirect__nav" id="recommend"><a>Đề xuất</a><i class="material-icons">language</i></li>
+            <li id="playlist" ><a>Playlist</a><i class="material-icons">music_note</i></li>
+            <li class="redirect__nav" id="nhachay"><a>Nhạc hay</a><i class="material-icons">filter_none</i></li>
+          </ul>
+        </nav>
+
+        <section>
+          <button type="button" class="btn__makePl btn">+</button>
+        </section>
+      </article>
+
+      <!-- sidebar mobile -->
+      <article class="sidebar--mobile position-absolute bottom-0 p-0">
+        <nav class="nav navbar-expand h-100 position-absolute">
+          <ul class="navbar-nav h-100 w-100 text-center ">
+            <li class="nav-item mx-3 w-25" id="home"><i class="material-icons w-100 ">home</i><a href="index.html">Home</a></li>
+            <li class="nav-item mx-3 w-25 redirect__nav" id="favorite"><i class="material-icons w-100">favorite</i><a>Đã Thích</a></li>
+            <li class="nav-item mx-3 w-25 redirect__nav" id="recommend"><i class="material-icons w-100">language</i><a>Đề Xuất</a></li>
+            <li class="nav-item mx-3 w-25 redirect__nav" id="nhachay"><i class="material-icons w-100">filter_none</i><a>Playlist</a></li>
+          </ul>
+        </nav>
+        
+      </article>
+
+    
+      <!-- Main -->
+      <article class="main-content overflow-auto">
+        <!-- Liked -->
+        <section id="liked" class="pt-5 ">
+          <section class="header">
+            <section  class="header__title">Đã thích</section>
+            <a id="favorite" class="header__see-all redirect__all">Xem tất cả</a>
+          </section>
+          <section class="content">
+            <!-- Item1 -->
+            <section class="cover-item">
+              <section class="item">
+                <img src="./images/song cover img/chet-trong-em.jpg" class="item__avt" alt="avatar"/>
+                <section class="item__name">Chết trong em</section>
+                <section class="item__au">-Thịnh Suy</section>
+              </section>
+            </section>
+            <!-- Item2 -->
+            <section class="cover-item">
+              <section class="item">
+                <img src="./images/song cover img/thang-may-em-nho-anh.png" class="item__avt" alt="avatar"/>
+                <section class="item__name">Tháng Mấy Em Nhớ Anh?</section>
+                <section class="item__au">-Hà Anh Tuấn</section>
+              </section>
+            </section>
+            <!-- Item3 -->
+            <section class="cover-item item-tablet">
+              <section class="item">
+                <img src="./images/song cover img/chay-khoi-the-gioi-nay.jpg" class="item__avt" alt="avatar"/>
+                <section class="item__name">Chạy khỏi thế giới này</section>
+                <section class="item__au">-Da LAB ft. Phương Ly</section>
+              </section>
+            </section>
+            <!-- Item4 -->
+            <section class="cover-item item-mobile">
+              <section class="item">
+                <img src="./images/song cover img/bao-tien-mot-mo-binh-yen.png" class="item__avt" alt="avatar"/>
+                <section class="item__name">bao tiền một mớ bình yên?</section>
+                <section class="item__au">-14 Casper & Bon</section>
+              </section>
+            </section>
+          </section>
+        </section>
+
+
+        <!--  recently -->
+        <section id="most_recently" class="pt-5 ">
+          <section class="header">
+            <section class="header__title">Nghệ sĩ đề xuất</section>
+            <!-- <a class="header__see-all">Xem tất cả</a> -->
+          </section>
+          <section class="content">
+            <!-- Item1 -->
+            <section class="cover-item">
+              <section class="item">
+                <img src="./images/avata singer/ha-anh-tuan.jpg" class="item__avt--singer" alt="avatar"/>
+                <section class="item__name pb-4">Hà Anh Tuấn</section>
+              </section>
+            </section>
+            <!-- Item2 -->
+            <section class="cover-item">
+              <section class="item">
+                <img src="./images/avata singer/da-lab.jpg" class="item__avt--singer" alt="avatar"/>
+                <section class="item__name pb-4">Da LAB</section>
+              </section>
+            </section>
+            <!-- Item3 -->
+            <section class="cover-item item-tablet">
+              <section class="item">
+                <img src="./images/avata singer/mono.jpg" class="item__avt--singer" alt="avatar"/>
+                <section class="item__name pb-4">MONO</section>
+              </section>
+            </section>
+            <!-- Item4 -->
+            <section class="cover-item item-mobile">
+              <section class="item">
+                <img src="./images/avata singer/bui-truong-linh.jpg" class="item__avt--singer" alt="avatar"/>
+                <section class="item__name pb-4">Bùi Trường Linh</section>
+              </section>
+            </section>
+          </section>
+        </section>
+
+
+        <!-- Top 30 VN -->
+        <section class="pt-5">
+          <section class="header">
+            <section class="header__title">Top 30 Việt Nam</section>
+            <a id="language" class="header__see-all redirect__all">Xem tất cả</a>
+          </section>
+          <section class="content">
+            <!-- Item1 -->
+            <section class="cover-item">
+              <section class="item">
+                <img src="./images/song cover img/co-em.jpg" class="item__avt" alt="avatar"/>
+                <section class="item__name">Có em</section>
+                <section class="item__au">-Madihu (Feat. Low G)</section>
+              </section>
+            </section>
+            <!-- Item2 -->
+            <section class="cover-item">
+              <section class="item">
+                <img src="./images/song cover img/waiting-for-you.png" class="item__avt" alt="avatar"/>
+                <section class="item__name">Waiting For You</section>
+                <section class="item__au">-MONO</section>
+              </section>
+            </section>
+            <!-- Item3 -->
+            <section class="cover-item item-tablet">
+              <section class="item">
+                <img src="./images/song cover img/vi-anh-dau-co-biet.png" class="item__avt" alt="avatar"/>
+                <section class="item__name">Vì anh đâu có biết</section>
+                <section class="item__au">-Madihu (Feat. Vũ.)</section>
+              </section>
+            </section>
+            <!-- Item4 -->
+            <section class="cover-item item-mobile">
+              <section class="item">
+                <img src="./images/song cover img/chay-khoi-the-gioi-nay.jpg" class="item__avt" alt="avatar"/>
+                <section class="item__name">Chạy khỏi thế giới này</section>
+                <section class="item__au">-Da LAB ft. Phương Ly</section>
+              </section>
+            </section>
+          </section>
+        </section> 
+      </article>
+
+
+    </main>
+
+
+
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>

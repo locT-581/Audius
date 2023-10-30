@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | Audius</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/png">
+    <link rel="stylesheet" href="./css/signup.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand m-0 row w-100">
+            <a class="logo audius" href="index.html">Audius</a>
+        </nav>
+    </header>
+    <main>
+        <section class="img_backgroud">
+            <img src="./images/bg_signIn.jpg">
+        </section>
+        <section class="wrapper">
+            <form class="signup_area" id="form">
+                <h2 class="title">Đăng ký để tham gia</h2>
+                <section class="form_group">
+                    <input type="text" class="form_input" id="name" placeholder="Tên" required minlength="3" maxlength="10">
+                </section>
+                <section class="form_group">
+                    <input type="text" class="form_input" id="email" placeholder="Email" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+                    title="Hãy nhập đúng định dạng email.">
+                </section>
+                <section class="form_group">
+                    <input type="text" class="form_input" id="username" placeholder="Tên đăng nhập" required>
+                </section>
+                <section class="form_group">
+                    <input type="password" class="form_input" id="password" placeholder="Mật khẩu" required
+                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                    title="Hãy nhập ít nhất 8 kí tự gồm 1 ký tự viết hoa, 1 ký tự đặc biệt và ít nhất 1 chữ số.">
+                </section>
+                <section class="form_group">
+                    <input type="password" class="form_input" id="prepassword" placeholder="Nhập lại mật khẩu" required
+                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
+                </section>
+                <section class="checkbox">
+                    <input type="checkbox" class="from_checkbox" required>
+                    <label for="check"> Tôi đồng ý <a href="#" class="rules_service">điều khoản dịch vụ</a> và <a href="#" class="rules_service">chính sách bảo mật</a></label><br>
+                </section>
+                <section class="checkbox">
+                    <input type="checkbox" class="check">
+                    <label for="check">Gửi email thông báo khi có thông tin mới</label><br>
+                </section>
+                <section class="action_signup">
+                    <input type="submit"  value=" Đăng ký" class="submit_btn" >
+                    <section class="action_plus">Hoặc đăng ký với :
+                        <img src="./images/google_icont.png" width="25px" height="25px" class="img_google">
+                        <img src="./images/apple_icont.png" width="25px" height="25px" class="img_apple">
+                    </section>
+                </section>
+                <section class="action_login">Đã có tài khoản? <a href="./login.html" class="login_href">Đăng nhập</a></section>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2023 copyright by LocT</p>
+    </footer>
+    <script src="./scripts/resigner.js"></script>
+</body>
+</html>
