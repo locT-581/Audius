@@ -19,9 +19,7 @@
 </div>
 </br>
 
-<video autoplay loop>
-  <source src="https://github.com/locT-581/audius/assets/132336957/e4fa15ae-1770-4858-b3f6-bb12e993e32a" type="video/mp4">
-  Video-demo
+<video src="https://github.com/locT-581/audius/assets/132336957/e4fa15ae-1770-4858-b3f6-bb12e993e32a" autoplay loop>
 </video>
 
 ## 📑 Description 
