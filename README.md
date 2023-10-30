@@ -19,8 +19,7 @@
 </div>
 </br>
 
-<video src="https://github.com/locT-581/audius/assets/132336957/e4fa15ae-1770-4858-b3f6-bb12e993e32a" autoplay loop>
-</video>
+![10mb](https://github.com/locT-581/audius/assets/132336957/77ab4751-686f-4d5c-8025-0b14a9261fad)
 
 ## 📑 Description 
 **Simple static web application for listening to music, using pure HTML, CSS, and JavaScript.**
