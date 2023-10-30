@@ -19,7 +19,7 @@
 </div>
 </br>
 
- <video class="sidebar__video" src="https://github.com/locT-581/Audius/assets/132336957/69ff90b0-4900-460b-bad5-152d1918a0e5" autoPlay loop muted nocontrols>
+ <video class="sidebar__video" src="https://github.com/locT-581/audius/assets/132336957/e4fa15ae-1770-4858-b3f6-bb12e993e32a" autoplay loop muted nocontrols>
  </video>
 
 ## 📑 Description 
