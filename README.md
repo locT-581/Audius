@@ -15,11 +15,11 @@
 </div>
 
 <div align="center">
-  <a  href="https://loct-581.github.io/Audius/">Demo</a>
+  <a  href="https://loct-581.github.io/audius/">Demo</a>
 </div>
 </br>
 
-![10mb](https://github.com/locT-581/audius/assets/132336957/77ab4751-686f-4d5c-8025-0b14a9261fad)
+![demo-gif](https://github.com/locT-581/audius/assets/132336957/b7290429-4138-43c2-8bf8-fbd358dd050c)
 
 ## 📑 Description 
 **Simple static web application for listening to music, using pure HTML, CSS, and JavaScript.**
